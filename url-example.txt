@@ -1,0 +1,4 @@
+copy this file as "url.txt" and add the Roblox project URL & version regex (flags gi, no //'s, capture group 1 is used as version number) to it, as well as your discord bot token (prefixed with "b:" (no quotes)) or webhook url (prefixed with "h:" (no quotes)). This first line is a comment
+[ROBLOX URL]
+\[(?:development|alpha|beta|final) ([1-9]+)\]
+b:[DISCORD TOKEN]
