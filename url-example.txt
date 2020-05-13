@@ -1,4 +1,19 @@
-copy this file as "url.txt" and add the Roblox project URL & version regex (flags gi, no //'s, capture group 1 is used as version number) to it, as well as your discord bot token (prefixed with "b:" (no quotes)) or webhook url (prefixed with "h:" (no quotes)). This first line is a comment
-[ROBLOX URL]
-\[(?:development|alpha|beta|final) ([1-9]+)\]
-b:[DISCORD TOKEN]
+# copy this file as "url.txt" and add text to it.
+# Roblox project URL
+project: [ROBLOX URL]
+
+# version regex (flags gi, no //'s, capture group 1 is used as version number
+regex: \[((?:development|alpha|beta|final) [1-9]+)\]
+
+# bot token discord bot token ("bot") or webhook url ("hook") ("b/" doesn't work until i feel like it)
+botType: hook
+bot: [DISCORD TOKEN]
+
+# project name (for message title, using "Roblox Game" will make the title "Roblox Game has been updated")
+title: Roblox Game
+
+# color, defaults to purple
+color: 0038d1
+
+# footer text
+footer: Existing servers that are running may or may not be affected by this. If you encounter any issues with the new update, let us know in #bugs.
